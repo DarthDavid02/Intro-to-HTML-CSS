@@ -1,0 +1,208 @@
+/* Author: David Ressler
+    Date: 11/29/2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav {
+    background-color: #800000
+}
+ 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+ 
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+}
+ 
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+ 
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+	font-family: Verdana, Helvetica, sans-serif; 
+	line-height: 1.4;
+	font-size: 100%;
+}
+
+main {
+    background-color: #ffffff;
+    overflow: auto;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+figure {
+    display: block;
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 2%;
+}
+
+aside {
+    background-color: #b8fffb;
+    padding: 1rem;
+}
+
+article {
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+	color: #1e13bb
+}
+/* :hover is a 'pseudoclass' saying what link looks like during mouseover */	
+a:hover {
+	color: #499396
+}
+
+p {
+	font-size: 1rem;
+	padding-bottom: .25rem;	
+
+}
+li {
+	font-size: 1rem;
+	padding-bottom: .25rem;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-weight:bold;
+	list-style: 1.1;
+    font-family: 'Paytone One', sans-serif;
+}
+h1 {
+	font-size: 50px;
+	color: #000000;
+}
+h2 {
+	font-size: 3rem;
+	color: #680000;
+}
+h3 {
+	font-size: 1.8rem;
+}
+
+.wrapper-header {
+background-color: rgb(184, 184, 184);
+}
+.wrapper-nav {
+   background-color: #800000;
+}
+.wrapper-main {
+   background-color: #ffffff;
+}
+.wrapper-footer {
+   background-color: rgb(184, 184, 184)
+}
+.pieces {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.map {
+    border: 12px solid #000;
+}
+
+.location {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.contact {
+    display:block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hours {
+    display: block;
+    max-width:100%;
+    height:auto;
+}
+
+@media screen and (min-width:480px) {
+	html {
+		font-size: 110%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 2% 0 2%;
+	}		
+} /* closes 480px media */
+
+@media screen and (min-width:768px) {
+    html {
+		font-size: 120%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 4% 0 4%;
+	}
+    
+    .menu-icon{
+		display: none;
+	}
+} /* closes 768px media*/
+
+@media screen and (min-width: 960px){
+    html {
+		font-size: 130%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 6% 0 6%;
+	}
+    nav li {
+        display: inline-block;
+        }
+}/* closes 960px media */
+
+@media screen and (min-width:1280px) {
+	html {
+		font-size: 140%;
+	}
+
+	header, nav, main, footer {
+		width: 1280px;
+		margin: auto
+	}
+    nav li {
+        display: inline-block;
+        }
+} /* closes 1280px media */

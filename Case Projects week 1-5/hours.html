@@ -1,0 +1,78 @@
+<!--Author: David Ressler
+    Date: 11/29/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dave's Chess Club</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper-header">
+        <header>
+            <h1 style="text-align: center;">Dave's Chess Club</h1>
+        </header>
+    </div> <!--closing .wrapper-header-->
+
+    <div class="wrapper-nav">
+<nav>
+    <button class="menu-icon">&#9776;</button>
+    <ul> 
+        <li><a href="index.html">Home</a>&nbsp; &#9813; &nbsp;</li> 
+        <li><a href="about.html">About Us</a>&nbsp; &#9814; &nbsp;</li>    
+        <li><a href="location.html">Location</a>&nbsp; &#9815; &nbsp;</li>
+        <li><a href="contact.html">Contact Us</a>&nbsp; &#9816; &nbsp;</li>
+        <li><a href="hours.html">Hours</a>&nbsp; &#9812; &nbsp;</li>  
+    </ul>
+</nav>
+    </div> <!-- closing .wrapper-nav-->
+
+    <div class="wrapper-main">
+<main>
+    <span class="hours"> <img src="images/we-are-open.png" alt="image of a sign saying'we are open'">
+        <figure><figcaption>The image above, is a we're open icon to show the hours the club is open.</figcaption></figure>
+            <a href="https://theistanbulinsider.com/wp-content/uploads/2019/06/we-are-open-300x218.png" 
+                    target="_blank">Source of image: www.theinstanbulinsider.com</a>
+    </span>
+    <div id="officehours">
+        <h2>Office Hours</h2>
+            <p>If you are visiting, you must wear a mask or show us your COVID-19 Vaccine Card to be allowed to enter the building. </p>
+            <dl>
+                <dd>Monday: 9:30am to 6:00pm</dd>
+                <dd>Tuesday: 9:30am to 6:00pm</dd>
+                <dd>Wednesday: 9:30am to 6:00pm</dd>
+                <dd>Thursday: 9:30am to 6:00pm</dd>
+                <dd>Friday: 9:30am to 6:00pm</dd>
+                <dd>Saturday: 10:00am to 5:00pm</dd>
+                <dd>Sunday: 10:00am to 5:00pm</dd>
+            </dl>
+    </div>
+        <p>Pick a number between 1 and 10. Can you guess the number?</p>
+        <form name="rn">
+            <input type="text" id="tb" name="tb" />
+            <input type="button" value="Random Number!" onclick="Random();" />
+        </form>
+    <script>
+        function Random() 
+        {
+        var rnd = Math.floor(Math.random() * 10 + 1);
+        document.getElementById('tb').value = rnd;
+        }
+    </script>
+</main>
+    </div> <!--ending .wrapper-main-->
+
+<div class="wrapper-footer">
+    <footer>
+        <!--This is the footer section-->
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+    </footer>
+</div> <!--closing .wrapper-footer-->
+</body>
+</html>
